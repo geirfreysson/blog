@@ -38,7 +38,7 @@ barplot(ie.to.plot$balance,names.arg=ie.to.plot$Country.Name,horiz=TRUE,cex.name
 #text(midpoints, 3, labels=ie$deficit)
 
 # the map, remember to comment the abs() filter to create the map
-#sPDF = joinCountryData2Map(ie,joinCode='NAME',nameJoinColumn="Country.Name")
+sPDF = joinCountryData2Map(ie,joinCode='NAME',nameJoinColumn="Country.Name")
 mapCountryData(sPDF,nameColumnToPlot="balance",addLegend='TRUE', colourPalette =c('darkred','khaki','darkgreen'),numCats=500)
 
 
